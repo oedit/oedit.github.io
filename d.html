@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge"><!-- 引入 layui.css -->
+	<link href="//unpkg.com/layui@2.7.6/dist/css/layui.css" rel="stylesheet">
+	<link rel="shortcut icon" type="image/x-icon" href="oedit.ico"/>
+	<title>OEDIT下载</title>
+	
+	 
+	<!-- 引入 layui.js -->
+	<script src="//unpkg.com/layui@2.7.6/dist/layui.js"></script>
+</head>
+<body>
+	<ul class="layui-nav layui-bg-blue " lay-filter="">
+	  <li class="layui-nav-item "><a href="/">OEDIT</a></li>
+	  <li class="layui-nav-item"><a href="/">首页</a></li>
+	  <li class="layui-nav-item  layui-this"><a href="d.htm">下载</a></li>
+	</ul>
+	 
+	<script>
+	//注意：导航 依赖 element 模块，否则无法进行功能性操作
+	layui.use('element', function(){
+	  var element = layui.element;
+	  
+	  //…
+	});
+	</script>
+	<img src="oedit.ico" width="500" height="500" >
+	<a href="oedit.zip" class="layui-btn layui-btn-normal"><i class="layui-icon" style="width: 6.25rem;height: 6.25rem;">&#xe67f;现在下载</i></a><br>
+</body>
+</html>
